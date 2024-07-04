@@ -39,15 +39,13 @@ public class MainMenu {
         Scanner scanner = AppCommands.scanner();
 
         System.out.println("+----------------------+");
-        System.out.println("|     Главное меню     |");
+        System.out.println("|     пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ     |");
         System.out.println("+----------------------+");
-        System.out.println("1. Меню пользователей");
-        System.out.println("2. Меню книг");
-        System.out.println("3. Меню брони");
-        System.out.println("4. Выход");
+        System.out.println("1. пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
+        System.out.println("2. пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ");
+        System.out.println("3. пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ");
+        System.out.println("4. пїЅпїЅпїЅпїЅпїЅ");
         System.out.println("+----------------------+");
-
-        System.out.println("Тест TEST");
 
         int command = scanner.nextInt();
         if (command == 1){
@@ -59,7 +57,7 @@ public class MainMenu {
         } else if (command == 4) {
             AppCommands.exitFromApp();
         } else {
-            System.out.println("Неверная команда");
+            System.out.println("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
             mainMenuRun();
         }
     }

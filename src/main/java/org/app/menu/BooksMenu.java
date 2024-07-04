@@ -27,14 +27,14 @@ public class BooksMenu {
         Scanner scanner = AppCommands.scanner();
 
         System.out.println("-----------------");
-        System.out.println("  Книжное меню  ");
+        System.out.println("  РљРЅРёР¶РЅРѕРµ РјРµРЅСЋ  ");
         System.out.println("-----------------");
-        System.out.println("1. Список книг");
-        System.out.println("2. Добавить книгу");
-        System.out.println("3. Найти книгу");
-        System.out.println("4. Удалить книгу");
-        System.out.println("5. Главное меню");
-        System.out.println("6. Выход");
+        System.out.println("1. РЎРїРёСЃРѕРє РєРЅРёРі");
+        System.out.println("2. Р”РѕР±Р°РІРёС‚СЊ РєРЅРёРіСѓ");
+        System.out.println("3. РќР°Р№С‚Рё РєРЅРёРіСѓ");
+        System.out.println("4. РЈРґР°Р»РёС‚СЊ РєРЅРёРіСѓ");
+        System.out.println("5. Р“Р»Р°РІРЅРѕРµ РјРµРЅСЋ");
+        System.out.println("6. Р’С‹С…РѕРґ");
         System.out.println("-----------------");
 
         int command = scanner.nextInt();
@@ -56,7 +56,7 @@ public class BooksMenu {
         } else if (command == 6) {
             AppCommands.exitFromApp();
         } else {
-            System.out.println("Неверная команда");
+            System.out.println("РќРµРІРµСЂРЅР°СЏ РєРѕРјР°РЅРґР°");
             bookMenu();
         }
     }
