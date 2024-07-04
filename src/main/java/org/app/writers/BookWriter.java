@@ -21,8 +21,8 @@ public class BookWriter {
     public void writeAllBooks(){
         List<Book> books = bookService.findAllBooks();
         System.out.println("+-----------------------------------------------------------+");
-        System.out.println("|                         Ñïèñîê êíèã                       |");
-        System.out.println("|---ID----|---Íàçâàíèå-----|-------Àâòîð------|--Â íàëè÷èè--|");
+        System.out.println("|                         Ð¡Ð¿Ð¸ÑÐ¾Ðº ÐºÐ½Ð¸Ð³                       |");
+        System.out.println("|---ID----|---ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ-----|-------ÐÐ²Ñ‚Ð¾Ñ€------|--Ð’ Ð½Ð°Ð»Ð¸Ñ‡Ð¸Ð¸--|");
         books.stream().forEach(book -> System.out.println(book.getId() + " | "
         + book.getName() + " | " + book.getAuthor() + " | " + book.isInStock()));
         System.out.println("-------------------------------------------------------------");
@@ -31,11 +31,11 @@ public class BookWriter {
     @Bean
     public void writeBooksByName(List<Book> books) {
         if (books == null) {
-            System.out.println("Êíèãà íå íàéäåíà");
+            System.out.println("ÐšÐ½Ð¸Ð³Ð° Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½Ð°");
         } else {
             System.out.println("+-----------------------------------------------------------+");
-            System.out.println("|                         Ñïèñîê êíèã                       |");
-            System.out.println("|---ID----|---Íàçâàíèå-----|-------Àâòîð------|--Â íàëè÷èè--|");
+            System.out.println("|                         Ð¡Ð¿Ð¸ÑÐ¾Ðº ÐºÐ½Ð¸Ð³                       |");
+            System.out.println("|---ID----|---ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ-----|-------ÐÐ²Ñ‚Ð¾Ñ€------|--Ð’ Ð½Ð°Ð»Ð¸Ñ‡Ð¸Ð¸--|");
             books.stream().forEach(book -> System.out.println(book.getId() + " | "
                     + book.getName() + " | " + book.getAuthor() + " | " + book.isInStock()));
             System.out.println("-------------------------------------------------------------");

@@ -21,8 +21,8 @@ public class UserWriter {
     public void writeAllUsers(){
         List<User> users = userService.findAllUsers();
         System.out.println("+------------------------------------+");
-        System.out.println("|            Ïîëüçîâàòåëè            |");
-        System.out.println("+----ID----|-----------Èìÿ-----------+");
+        System.out.println("|            ÐŸÐ¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ð¸            |");
+        System.out.println("+----ID----|-----------Ð˜Ð¼Ñ-----------+");
         users.stream().forEach(user -> System.out.println(
                 user.getId() + " | " + user.getName()
         ));
@@ -31,11 +31,11 @@ public class UserWriter {
     @Bean
     public void writeUserByName(List<User> users){
         if (users == null){
-            System.out.println("ïîëüçîâàòåëü ñ òàêèì èìåíåì íå íàéäåí");
+            System.out.println("Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÑŒ Ñ Ñ‚Ð°ÐºÐ¸Ð¼ Ð¸Ð¼ÐµÐ½ÐµÐ¼ Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½");
         } else {
             System.out.println("+------------------------------------+");
-            System.out.println("|            Ïîëüçîâàòåëè            |");
-            System.out.println("+----ID----|-----------Èìÿ-----------+");
+            System.out.println("|            ÐŸÐ¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ð¸            |");
+            System.out.println("+----ID----|-----------Ð˜Ð¼Ñ-----------+");
             users.stream().forEach(user -> System.out.println(
                     user.getId() + " | " + user.getName()
             ));

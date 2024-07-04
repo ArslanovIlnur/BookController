@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding" addBOMForNewFiles="with BOM">
+  <component name="Encoding">
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/app/menu/MainMenu.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/app/menu/ReservationMenu.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/app/menu/UserMenu.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/app/service/BookService.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/app/service/ReservationService.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/app/service/UserService.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/app/writers/BookWriter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/app/writers/ReservationWriter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/app/writers/UserWriter.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="PROJECT" charset="windows-1251" />
   </component>
 </project>

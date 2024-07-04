@@ -27,14 +27,14 @@ public class ReservationMenu {
         Scanner scanner = AppCommands.scanner();
 
         System.out.println("+-----------------------+");
-        System.out.println("|          Брони        |");
+        System.out.println("|          Р‘СЂРѕРЅРё        |");
         System.out.println("+-----------------------+");
-        System.out.println("1. Вывести все брони");
-        System.out.println("2. Создать бронь");
-        System.out.println("3. Удалить бронь");
-        System.out.println("4. Найти бронь по книге");
-        System.out.println("5. Главное меню");
-        System.out.println("6. Выход");
+        System.out.println("1. Р’С‹РІРµСЃС‚Рё РІСЃРµ Р±СЂРѕРЅРё");
+        System.out.println("2. РЎРѕР·РґР°С‚СЊ Р±СЂРѕРЅСЊ");
+        System.out.println("3. РЈРґР°Р»РёС‚СЊ Р±СЂРѕРЅСЊ");
+        System.out.println("4. РќР°Р№С‚Рё Р±СЂРѕРЅСЊ РїРѕ РєРЅРёРіРµ");
+        System.out.println("5. Р“Р»Р°РІРЅРѕРµ РјРµРЅСЋ");
+        System.out.println("6. Р’С‹С…РѕРґ");
         System.out.println("+-----------------------+");
 
 
@@ -57,7 +57,7 @@ public class ReservationMenu {
         } else if (command == 6) {
             AppCommands.exitFromApp();
         } else {
-            System.out.println("Неверная команда");
+            System.out.println("РќРµРІРµСЂРЅР°СЏ РєРѕРјР°РЅРґР°");
             reservationMenuRun();
         }
     }

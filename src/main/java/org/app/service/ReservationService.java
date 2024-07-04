@@ -36,14 +36,14 @@ public class ReservationService {
     public Reservation createReservation(){
         Scanner scanner = AppCommands.scanner();
 
-        System.out.println("Введите ID книги:");
+        System.out.println("Р’РІРµРґРёС‚Рµ ID РєРЅРёРіРё:");
         Long bookId = scanner.nextLong();
         Book bookForReservation = bookRepository.getById(bookId);
         if (!bookForReservation.isInStock()){
-            System.out.println("Книга занята");
+            System.out.println("РљРЅРёРіР° Р·Р°РЅСЏС‚Р°");
             return null;
         } else {
-            System.out.println("Введите ID пользователя:");
+            System.out.println("Р’РІРµРґРёС‚Рµ ID РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ:");
             Long userId = scanner.nextLong();
 
             User userForReservation = userRepository.getById(userId);
@@ -64,7 +64,7 @@ public class ReservationService {
     public void deleteReservation(){
         Scanner scanner = AppCommands.scanner();
 
-        System.out.println("Введите ID брони:");
+        System.out.println("Р’РІРµРґРёС‚Рµ ID Р±СЂРѕРЅРё:");
         Long reservationID = scanner.nextLong();
 
         Reservation reservation = reservationRepository.getById(reservationID);
@@ -73,14 +73,14 @@ public class ReservationService {
 
         bookRepository.save(book);
         reservationRepository.deleteById(reservationID);
-        System.out.println("Удалено");
+        System.out.println("РЈРґР°Р»РµРЅРѕ");
     }
 
     @Bean
     public Reservation getReservationByBook(){
         Scanner scanner = AppCommands.scanner();
 
-        System.out.println("Введите ID книги");
+        System.out.println("Р’РІРµРґРёС‚Рµ ID РєРЅРёРіРё");
         Long id = scanner.nextLong();
         Book book = bookRepository.getById(id);
 
@@ -92,7 +92,7 @@ public class ReservationService {
     public List<Reservation> getReservationsByUserId(){
         Scanner scanner = AppCommands.scanner();
 
-        System.out.println("Введите ID пользователя");
+        System.out.println("Р’РІРµРґРёС‚Рµ ID РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ");
         Long id = scanner.nextLong();
 
         User user = userRepository.getById(id);

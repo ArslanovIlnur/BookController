@@ -32,10 +32,10 @@ public class BookService {
 
         Scanner scanner = AppCommands.scanner();
 
-        System.out.println("Введите название книги");
+        System.out.println("Р’РІРµРґРёС‚Рµ РЅР°Р·РІР°РЅРёРµ РєРЅРёРіРё");
         String name = scanner.nextLine();
 
-        System.out.println("Введите автора");
+        System.out.println("Р’РІРµРґРёС‚Рµ Р°РІС‚РѕСЂР°");
         String author = scanner.nextLine();
 
         book.setName(name);
@@ -53,7 +53,7 @@ public class BookService {
 
         Scanner scanner = AppCommands.scanner();
 
-        System.out.println("Введите название книги");
+        System.out.println("Р’РІРµРґРёС‚Рµ РЅР°Р·РІР°РЅРёРµ РєРЅРёРіРё");
         String name = scanner.nextLine();
 
         books = bookRepository.getBookByName(name);
@@ -68,10 +68,10 @@ public class BookService {
     public void deleteBookById(){
         Scanner scanner = AppCommands.scanner();
 
-        System.out.println("Введите ID книги");
+        System.out.println("Р’РІРµРґРёС‚Рµ ID РєРЅРёРіРё");
         Long id = scanner.nextLong();
 
         bookRepository.deleteById(id);
-        System.out.println("Удалено");
+        System.out.println("РЈРґР°Р»РµРЅРѕ");
     }
 }

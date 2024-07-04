@@ -30,7 +30,7 @@ public class UserService {
         User user = new User();
         Scanner scanner = AppCommands.scanner();
 
-        System.out.println("Введите имя пользователя:");
+        System.out.println("Р’РІРµРґРёС‚Рµ РёРјСЏ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ:");
         String name = scanner.nextLine();
 
         user.setName(name);
@@ -44,7 +44,7 @@ public class UserService {
         List<User> users = new ArrayList<>();
         Scanner scanner = AppCommands.scanner();
 
-        System.out.println("Введите имя пользователя");
+        System.out.println("Р’РІРµРґРёС‚Рµ РёРјСЏ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ");
         String name = scanner.nextLine();
 
         users = userRepository.getUserByName(name);
@@ -60,11 +60,11 @@ public class UserService {
     public void deleteUser(){
         Scanner scanner = AppCommands.scanner();
 
-        System.out.println("Введите ID пользователя для удаления");
+        System.out.println("Р’РІРµРґРёС‚Рµ ID РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ РґР»СЏ СѓРґР°Р»РµРЅРёСЏ");
         Long id = scanner.nextLong();
 
         userRepository.deleteById(id);
-        System.out.println("Удалено");
+        System.out.println("РЈРґР°Р»РµРЅРѕ");
     }
 
     @Bean
@@ -72,7 +72,7 @@ public class UserService {
         User user;
         Scanner scanner = AppCommands.scanner();
 
-        System.out.println("Введите ID пользователя для изменения:");
+        System.out.println("Р’РІРµРґРёС‚Рµ ID РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ РґР»СЏ РёР·РјРµРЅРµРЅРёСЏ:");
         Long id = scanner.nextLong();
         scanner.nextLine();
 
@@ -82,7 +82,7 @@ public class UserService {
             throw new RuntimeException(e);
         }
 
-        System.out.println("Введите новое имя:");
+        System.out.println("Р’РІРµРґРёС‚Рµ РЅРѕРІРѕРµ РёРјСЏ:");
         String name = scanner.nextLine();
 
         user.setName(name);

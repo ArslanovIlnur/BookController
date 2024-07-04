@@ -38,16 +38,16 @@ public class UserMenu {
         Scanner scanner = AppCommands.scanner();
 
         System.out.println("+---------------------------------+");
-        System.out.println("|           Пользователи          |");
+        System.out.println("|           РџРѕР»СЊР·РѕРІР°С‚РµР»Рё          |");
         System.out.println("+---------------------------------+");
-        System.out.println("1. Показать всех пользователей");
-        System.out.println("2. Добавить пользователя");
-        System.out.println("3. Найти пользователя");
-        System.out.println("4. Удалить пользователя");
-        System.out.println("5. Изменить параметры пользователя");
-        System.out.println("6. Найти брони пользователя");
-        System.out.println("7. Главное меню");
-        System.out.println("8. Выход");
+        System.out.println("1. РџРѕРєР°Р·Р°С‚СЊ РІСЃРµС… РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№");
+        System.out.println("2. Р”РѕР±Р°РІРёС‚СЊ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ");
+        System.out.println("3. РќР°Р№С‚Рё РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ");
+        System.out.println("4. РЈРґР°Р»РёС‚СЊ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ");
+        System.out.println("5. РР·РјРµРЅРёС‚СЊ РїР°СЂР°РјРµС‚СЂС‹ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ");
+        System.out.println("6. РќР°Р№С‚Рё Р±СЂРѕРЅРё РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ");
+        System.out.println("7. Р“Р»Р°РІРЅРѕРµ РјРµРЅСЋ");
+        System.out.println("8. Р’С‹С…РѕРґ");
         System.out.println("+----------------------------------+");
 
 
@@ -76,7 +76,7 @@ public class UserMenu {
         } else if (command == 8) {
             AppCommands.exitFromApp();
         } else {
-            System.out.println("Неверная команда");
+            System.out.println("РќРµРІРµСЂРЅР°СЏ РєРѕРјР°РЅРґР°");
             userMenuRun();
         }
     }

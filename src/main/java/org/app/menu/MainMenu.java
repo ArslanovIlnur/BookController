@@ -39,12 +39,12 @@ public class MainMenu {
         Scanner scanner = AppCommands.scanner();
 
         System.out.println("+----------------------+");
-        System.out.println("|     ������� ����     |");
+        System.out.println("|     Главное меню     |");
         System.out.println("+----------------------+");
-        System.out.println("1. ���� �������������");
-        System.out.println("2. ���� ����");
-        System.out.println("3. ���� �����");
-        System.out.println("4. �����");
+        System.out.println("1. Меню пользователей");
+        System.out.println("2. Меню книг");
+        System.out.println("3. Меню броней");
+        System.out.println("4. Выход");
         System.out.println("+----------------------+");
 
         int command = scanner.nextInt();
@@ -57,7 +57,7 @@ public class MainMenu {
         } else if (command == 4) {
             AppCommands.exitFromApp();
         } else {
-            System.out.println("�������� �������");
+            System.out.println("Неверная команда");
             mainMenuRun();
         }
     }

@@ -22,12 +22,12 @@ public class ReservationWriter {
         List<Reservation> reservations = reservationService.findAllReservations();
 
         System.out.println("+--------------------------------------------------------------------+");
-        System.out.println("|                                 Брони                              |");
+        System.out.println("|                                 Р‘СЂРѕРЅРё                              |");
         System.out.println("+--------------------------------------------------------------------+");
         reservations.stream().forEach(reservation -> System.out.println(
-                "Номер брони: " + reservation.getId() + "\n" +
-                        "Пользователь: " + reservation.getUser().getId() + " | " + reservation.getUser().getName() + "\n" +
-                        "Книга: " + reservation.getBook().getName() + " | " + reservation.getBook().getAuthor() + "\n" +
+                "РќРѕРјРµСЂ Р±СЂРѕРЅРё: " + reservation.getId() + "\n" +
+                        "РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ: " + reservation.getUser().getId() + " | " + reservation.getUser().getName() + "\n" +
+                        "РљРЅРёРіР°: " + reservation.getBook().getName() + " | " + reservation.getBook().getAuthor() + "\n" +
                         "======================================================================"
 
         ));
@@ -35,17 +35,17 @@ public class ReservationWriter {
 
     @Bean
     public void writeReservation(Reservation reservation){
-        System.out.println("\nНомер брони: " + reservation.getId() + "\n" +
-                "Книга: " + reservation.getBook().getName() + " | " + reservation.getBook().getAuthor() + "\n" +
-                "Пользователь: " + reservation.getUser().getId() + " | " + reservation.getUser().getName() + "\n");
+        System.out.println("\nРќРѕРјРµСЂ Р±СЂРѕРЅРё: " + reservation.getId() + "\n" +
+                "РљРЅРёРіР°: " + reservation.getBook().getName() + " | " + reservation.getBook().getAuthor() + "\n" +
+                "РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ: " + reservation.getUser().getId() + " | " + reservation.getUser().getName() + "\n");
     }
 
     @Bean
     public void writeReservations(List<Reservation> reservations){
         reservations.stream().forEach(reservation ->
-                System.out.println("\nНомер брони: " + reservation.getId() + "\n" +
-                        "Книга: " + reservation.getBook().getName() + " | " + reservation.getBook().getAuthor() + "\n" +
-                        "Пользователь: " + reservation.getUser().getId() + " | " + reservation.getUser().getName() + "\n")
+                System.out.println("\nРќРѕРјРµСЂ Р±СЂРѕРЅРё: " + reservation.getId() + "\n" +
+                        "РљРЅРёРіР°: " + reservation.getBook().getName() + " | " + reservation.getBook().getAuthor() + "\n" +
+                        "РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ: " + reservation.getUser().getId() + " | " + reservation.getUser().getName() + "\n")
                 );
     }
 }
