@@ -47,6 +47,8 @@ public class MainMenu {
         System.out.println("4. Выход");
         System.out.println("+----------------------+");
 
+        System.out.println("Тест TEST");
+
         int command = scanner.nextInt();
         if (command == 1){
             userMenu.userMenuRun();
