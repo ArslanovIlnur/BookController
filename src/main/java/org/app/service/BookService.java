@@ -3,6 +3,8 @@ package org.app.service;
 import org.app.commands.AppCommands;
 import org.app.entities.Book;
 import org.app.repositories.BookRepository;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
@@ -13,6 +15,8 @@ import java.util.Scanner;
 
 @Service
 public class BookService {
+    Logger logger = LoggerFactory.getLogger(BookService.class);
+
     private final BookRepository bookRepository;
 
     @Autowired
@@ -72,6 +76,6 @@ public class BookService {
         Long id = scanner.nextLong();
 
         bookRepository.deleteById(id);
-        System.out.println("Удалено");
+        logger.info("Удаление");
     }
 }
