@@ -1,9 +1,9 @@
 package org.app.menu;
 
-import org.app.writers.BookWriter;
+import org.app.commands.writers.BookWriter;
 import org.app.commands.AppCommands;
-import org.app.writers.ReservationWriter;
-import org.app.writers.UserWriter;
+import org.app.commands.writers.ReservationWriter;
+import org.app.commands.writers.UserWriter;
 import org.app.service.BookService;
 import org.app.service.ReservationService;
 import org.app.service.UserService;

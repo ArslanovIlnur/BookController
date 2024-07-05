@@ -1,13 +1,12 @@
 package org.app.menu;
 
 import org.app.commands.AppCommands;
-import org.app.writers.BookWriter;
+import org.app.commands.writers.BookWriter;
 import org.app.service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
-import java.io.InputStream;
 import java.util.Scanner;
 
 @Component

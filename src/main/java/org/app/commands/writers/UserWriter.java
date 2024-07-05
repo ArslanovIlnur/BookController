@@ -1,4 +1,4 @@
-package org.app.writers;
+package org.app.commands.writers;
 
 import org.app.entities.User;
 import org.app.service.UserService;

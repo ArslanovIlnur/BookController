@@ -1,4 +1,4 @@
-package org.app.writers;
+package org.app.commands.writers;
 
 import org.app.entities.Book;
 import org.app.service.BookService;

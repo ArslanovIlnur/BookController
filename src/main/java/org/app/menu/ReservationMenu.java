@@ -2,7 +2,7 @@ package org.app.menu;
 
 import org.app.commands.AppCommands;
 import org.app.service.ReservationService;
-import org.app.writers.ReservationWriter;
+import org.app.commands.writers.ReservationWriter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
