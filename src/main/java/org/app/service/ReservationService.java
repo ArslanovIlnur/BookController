@@ -7,6 +7,8 @@ import org.app.entities.User;
 import org.app.repositories.BookRepository;
 import org.app.repositories.ReservationRepository;
 import org.app.repositories.UserRepository;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
@@ -19,6 +21,8 @@ public class ReservationService {
     private final UserRepository userRepository;
     private final BookRepository bookRepository;
     private final ReservationRepository reservationRepository;
+
+    Logger logger = LoggerFactory.getLogger(ReservationService.class);
 
     @Autowired
     public ReservationService(UserRepository userRepository, BookRepository bookRepository, ReservationRepository reservationRepository) {
@@ -40,7 +44,7 @@ public class ReservationService {
         Long bookId = scanner.nextLong();
         Book bookForReservation = bookRepository.getById(bookId);
         if (!bookForReservation.isInStock()){
-            System.out.println("Книга занята");
+            logger.error((char)27 + "[31m" + "Книга занята"+ (char)27 + "[0m");
             return null;
         } else {
             System.out.println("Введите ID пользователя:");
@@ -73,7 +77,7 @@ public class ReservationService {
 
         bookRepository.save(book);
         reservationRepository.deleteById(reservationID);
-        System.out.println("Удалено");
+        logger.info("Удалено");
     }
 
     @Bean
