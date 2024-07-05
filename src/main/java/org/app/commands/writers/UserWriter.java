@@ -2,6 +2,8 @@ package org.app.commands.writers;
 
 import org.app.entities.User;
 import org.app.service.UserService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
@@ -12,6 +14,8 @@ import java.util.List;
 public class UserWriter {
     private final UserService userService;
 
+    Logger logger = LoggerFactory.getLogger(UserWriter.class);
+
     @Autowired
     public UserWriter(UserService userService) {
         this.userService = userService;
@@ -19,6 +23,8 @@ public class UserWriter {
 
     @Bean
     public void writeAllUsers(){
+        logger.info("Вывод всех пользователей");
+
         List<User> users = userService.findAllUsers();
         System.out.println("+------------------------------------+");
         System.out.println("|            Пользователи            |");
